@@ -13,6 +13,7 @@ function Checkout() {
         <div>
           <h3>Hello, {user?.email}</h3>
           <h2 className="checkout_title"> Your Shopping Basket</h2>
+
           {/* <CheckoutProduct/> */}
           {basket.map((item) => (
             <CheckoutProduct
@@ -23,6 +24,7 @@ function Checkout() {
               rating={item.rating}
             />
           ))}
+         
         </div>
       </div>
       <div className="checkout_right">
